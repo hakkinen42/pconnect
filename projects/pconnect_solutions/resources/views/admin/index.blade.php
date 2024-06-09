@@ -1,16 +1,24 @@
-@extends("layouts.front")
+@extends('layouts.front')
 
 @section("title", __('messages.title.about'))
 
 @push("css")
 @endpush
-
-@section("body")
-    <div id="body" class="container my-5 p-3 text-center">
-        <h1 class="display-4 animate__animated animate__zoomIn">{{ __('messages.welcome', ['username' => $user ? $user->name : '']) }}</h1>
-        <p class="lead animate__animated animate__zoomIn animate__delay-1s">{{ __('messages.welcome', ['username' => $user ? $user->name : '']) }}</p>
+@section('body')
+<div class="container col-md-6 my-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">{{ __('home.user.detail') }}</div>
+                <div class="card-body">
+                    <p><b>{{ __('home.user.name') }}</b>{{ucwords($user->name)}}</p>
+                    <p><b>{{ __('home.user.mail') }}</b>{{$user->email}}</p>
+                    <a href="{{URL::previous()}}" class="btn btn-primary my-2 float-end">
+                        {{ __('home.back') }}
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 @endsection
-
-@push("js")
-@endpush
