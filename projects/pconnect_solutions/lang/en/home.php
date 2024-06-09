@@ -6,5 +6,5 @@ return [
         'name' => 'Name Surname: ',
         'mail' => 'Email Address: ',
     ],
-    'back' => 'Back'
+    'home' => 'HomePage'
 ];

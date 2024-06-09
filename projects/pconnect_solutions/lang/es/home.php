@@ -6,5 +6,5 @@ return [
         'name' => 'Nombre Apellido: ',
         'mail' => 'Correo electrónico: ',
     ],
-    'back' => 'Volver'
+    'home' => 'Inicio'
 ];

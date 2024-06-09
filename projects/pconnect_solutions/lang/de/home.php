@@ -6,6 +6,6 @@ return [
         'name' => 'Name Surname : ',
         'mail' => 'Email Adresse : ',
     ],
-    'back' => 'zurück'
+    'home' => 'StartSeite'
 
 ];

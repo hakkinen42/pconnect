@@ -38,18 +38,18 @@
             text-align: center;
             padding-top: 20px;
         }
-        .btn-primary {
+        .btn-success {
             color: #ffffff;
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: rgba(23, 192, 110, 0.267);
+            border-color: rgba(36, 207, 124, 0.267);
             padding: 10px 20px;
             font-size: 16px;
             text-decoration: none;
             border-radius: 5px;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+        .btn-success:hover {
+            background-color: rgba(65, 189, 129, 0.891);
+            border-color: rgba(65, 189, 129, 0.173);
         }
     </style>
 </head>
@@ -70,7 +70,7 @@
         </p>
     </div>
     <div class="email-footer">
-        <a href="{{ route('verify', ['token' => $token]) }}" class="btn-primary">{{ __('emails.verify_button') }}</a>
+        <a href="{{ route('verify', ['token' => $token]) }}" class="btn btn-success">{{ __('emails.verify_button') }}</a>
     </div>
 </div>
 

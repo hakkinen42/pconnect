@@ -9,7 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Hash;;
+use Illuminate\Support\Facades\Hash;
 
 use App\Notifications\WelcomeMailNotification;
 use Illuminate\Support\Facades\Session;
@@ -74,22 +74,38 @@ class RegisterController extends Controller
 
     public function sendVerifyMail(Request $request)
     {
-        $data = $request->only('email');
 
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        $email = $validatedData['email'];
         $user = User::query()
-            ->where('email', $data['email'])
+            ->where('email', $email)
             ->whereNull('email_verified_at')
             ->first();
 
+
         if ($user) {
             $token = Str::random(40);
-
             Cache::put('verify_token_' . $token, $user->id, 3600);
 
             $user->notify(new WelcomeMailNotification($token));
+
+            $successful = __('messages.register.controller.successful');
+            $verifyMail = __('messages.register.controller.verify_mail_sent');
+
+            alert()->success($successful, $verifyMail);
+        } else {
+
+            $warningMessage = __('messages.register.controller.warning');
+            $correctMail = __('messages.register.controller.correct_mail');
+
+            alert()->warning($warningMessage, $correctMail);
         }
 
-        alert()->success('Başarılı', 'Mail adresinize doğrulama maili gönderilmiştir.');
+
+
         return redirect()->back();
     }
 }

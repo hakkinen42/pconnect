@@ -5,7 +5,6 @@ namespace App\Observers;
 use App\Models\User;
 use App\Notifications\WelcomeMailNotification;
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 
 class UserObserver
