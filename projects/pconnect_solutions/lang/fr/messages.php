@@ -41,8 +41,10 @@ return [
             'warning' => 'Avertissement',
             'token' => 'Le jeton a expiré',
             'success' => 'Succès',
-            'verifiedAccount' => 'Votre compte a été confirmé.'
-
+            'verifiedAccount' => 'Votre compte a été confirmé.',
+            'successful' => 'Succès',
+            'verify_mail_sent' => 'Un email de vérification a été envoyé à votre adresse e-mail.',
+            'correct_mail' => 'Veuillez vérifier que vous avez saisi correctement votre adresse e-mail.'
         ],
     ],
     'login' => [
@@ -50,6 +52,7 @@ return [
         'password' => 'Mot de passe',
         'remember_me' => 'Se souvenir de moi',
         'google' => 'Continuer avec Google',
+        'verify_view' => 'Renvoyer l"e-mail de vérification',
         'controller' => [
             'verify_mail' => 'Vous devez vérifier votre adresse e-mail avant de vous connecter.',
             'check' => 'Veuillez vérifier vos informations.',
@@ -64,6 +67,6 @@ return [
         'title' => 'Vérification de l\'e-mail',
         'welcome' => 'Bienvenue',
         'mail' => 'E-mail',
-        'send_mail' => 'Envoyer un e-mail de vérification',
+        'send_mail' => 'E-mail de vérification',
     ],
 ];

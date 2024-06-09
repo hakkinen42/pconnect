@@ -41,8 +41,10 @@ return [
             'warning' => 'Warnung',
             'token' => 'Der Token ist abgelaufen',
             'success' => 'Erfolg',
-            'verifiedAccount' => 'Ihr Konto wurde bestätigt.'
-
+            'verifiedAccount' => 'Ihr Konto wurde bestätigt.',
+            'successful' => 'Erfolgreich',
+            'verify_mail_sent' => 'Eine Bestätigungs-E-Mail wurde an Ihre E-Mail-Adresse gesendet.',
+            'correct_mail' => 'Bitte stellen Sie sicher, dass Sie Ihre E-Mail-Adresse korrekt eingegeben haben.'
         ],
     ],
     'login' => [
@@ -50,6 +52,7 @@ return [
         'password' => 'Passwort',
         'remember_me' => 'Erinnere dich an mich',
         'google' => 'Mit Google fortfahren',
+        'verify_view' => 'Bestätigungsmail erneut senden',
         'controller' => [
             'verify_mail' => 'Sie müssen Ihre E-Mail-Adresse bestätigen, bevor Sie sich anmelden können.',
             'check' => 'Bitte überprüfen Sie Ihre Informationen.',
@@ -64,6 +67,6 @@ return [
         'title' => 'E-Mail Überprüfen',
         'welcome' => 'Willkommen',
         'mail' => 'E-Mail',
-        'send_mail' => 'Bestätigungs-E-Mail senden',
+        'send_mail' => 'Bestätigungs-E-Mail',
     ],
 ];

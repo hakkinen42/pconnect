@@ -41,7 +41,10 @@ return [
             'warning' => 'Warning',
             'token' => 'The token has expired',
             'success' => 'Success',
-            'verifiedAccount' => 'Your account has been confirmed.'
+            'verifiedAccount' => 'Your account has been confirmed.',
+            'successful' => 'Successful',
+            'verify_mail_sent' => 'A verification email has been sent to your email address.',
+            'correct_mail' => 'Please make sure you have entered your email correctly.'
         ],
     ],
     'login' => [
@@ -49,6 +52,7 @@ return [
         'password' => 'Password',
         'remember_me' => 'Remember Me',
         'google' => 'Continue with Google',
+        'verify_view' => 'Resend Verification Email',
         'controller' => [
             'verify_mail' => 'You need to verify your email address before logging in.',
             'check' => 'Please check your information.',
@@ -62,7 +66,7 @@ return [
     'verify' => [
         'title' => 'Mail Verify',
         'welcome' => 'Welcome',
-        'mail' => 'EMail',
-        'send_mail' => 'Send Verification Email',
+        'mail' => 'E-Mail',
+        'send_mail' => 'Verification Email',
     ],
 ];

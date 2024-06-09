@@ -38,9 +38,9 @@ Route::post('logout', [LoginController::class, 'logout'])->name("logout");
 Route::get('auth/{driver}/callback', [LoginController::class, 'socialiteVerify'])->name('login.socialite-verify');
 Route::get('auth/{driver}', [LoginController::class, 'socialite'])->name('login.socialite');
 
-Route::get("confirm/{token}", [RegisterController::class, 'verify'])->name('verify');
-Route::get('/confirm-mail', [RegisterController::class, 'sendVerifyMailShowForm'])->name('send-verify-mail');
-Route::post('/confirm-mail', [RegisterController::class, 'sendVerifyMail']);
+Route::get("verify/{token}", [RegisterController::class, 'verify'])->name('verify');
+Route::get('/verify-mail', [RegisterController::class, 'sendVerifyMailShowForm'])->name('send-verify-mail');
+Route::post('/verify-mail', [RegisterController::class, 'sendVerifyMail']);
 
 Route::prefix("home")->name('admin.')->middleware("auth")->group(function () {
 

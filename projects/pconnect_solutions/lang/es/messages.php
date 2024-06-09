@@ -20,7 +20,6 @@ return [
         'login' => 'Iniciar sesión',
         'register' => 'Registrarse',
     ],
-
     'language' => [
         'english' => 'Inglés',
         'german' => 'Alemán',
@@ -42,8 +41,10 @@ return [
             'warning' => 'Advertencia',
             'token' => 'El token ha expirado',
             'success' => 'Éxito',
-            'verifiedAccount' => 'Su cuenta ha sido confirmada.'
-
+            'verifiedAccount' => 'Su cuenta ha sido confirmada.',
+            'successful' => 'Exitoso',
+            'verify_mail_sent' => 'Se ha enviado un correo de verificación a su dirección de correo electrónico.',
+            'correct_mail' => 'Por favor, asegúrese de haber ingresado correctamente su correo electrónico.'
         ],
     ],
     'login' => [
@@ -51,6 +52,7 @@ return [
         'password' => 'Contraseña',
         'remember_me' => 'Recordarme',
         'google' => 'Continuar con Google',
+        'verify_view' => 'Reenviar correo de verificación',
         'controller' => [
             'verify_mail' => 'Debe verificar su dirección de correo electrónico antes de iniciar sesión.',
             'check' => 'Por favor, verifique su información.',
@@ -65,6 +67,6 @@ return [
         'title' => 'Verificación de correo electrónico',
         'welcome' => 'Bienvenido',
         'mail' => 'Correo electrónico',
-        'send_mail' => 'Enviar correo de verificación',
+        'send_mail' => 'Correo electrónico de verificación',
     ],
 ];

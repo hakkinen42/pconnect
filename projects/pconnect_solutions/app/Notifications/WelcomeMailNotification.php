@@ -3,7 +3,6 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
@@ -37,9 +36,6 @@ class WelcomeMailNotification extends Notification
         return (new MailMessage)
             ->subject(__('emails.subject'))
             ->view('mail.welcome', ['user' => $user, 'token' => $this->token]);
-        // ->line('The introduction to the notification.')
-        // ->action('Notification Action', url('/'))
-        // ->line('Thank you for using our application!');
     }
 
     /**

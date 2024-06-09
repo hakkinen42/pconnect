@@ -6,5 +6,5 @@ return [
         'name' => 'Ad Soyad: ',
         'mail' => 'E-posta Adresi: ',
     ],
-    'back' => 'Geri'
+    'home' => 'Anasayfa'
 ];

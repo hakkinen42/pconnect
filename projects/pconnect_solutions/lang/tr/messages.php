@@ -41,7 +41,10 @@ return [
             'warning' => 'Uyarı',
             'token' => 'Token süresi doldu',
             'success' => 'Başarı',
-            'verifiedAccount' => 'Hesabınız doğrulandı.'
+            'verifiedAccount' => 'Hesabınız doğrulandı.',
+            'successful' => 'Başarılı',
+            'verify_mail_sent' => 'Doğrulama e-postası e-posta adresinize gönderildi.',
+            'correct_mail' => 'Mailinizi dogru girdiginizden emin olunuz.'
         ],
     ],
     'login' => [
@@ -49,6 +52,7 @@ return [
         'password' => 'Şifre',
         'remember_me' => 'Beni Hatırla',
         'google' => 'Google ile Devam Et',
+        'verify_view' => 'Doğrulama Mailini Tekrar Al',
         'controller' => [
             'verify_mail' => 'Giriş yapabilmeniz için öncelikle mailinizi doğrulamanız gerekmektedir.',
             'check' => 'Bilgilerinizi lütfen kontrol edin.',
@@ -63,6 +67,6 @@ return [
         'title' => 'E-Posta Doğrulama',
         'welcome' => 'Hoşgeldiniz',
         'mail' => 'E-Posta',
-        'send_mail' => 'Doğrulama E-Postası Gönder',
+        'send_mail' => 'Doğrulama E-Postası',
     ],
 ];

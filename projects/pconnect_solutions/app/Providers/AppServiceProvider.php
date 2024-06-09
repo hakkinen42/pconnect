@@ -65,7 +65,6 @@ class AppServiceProvider extends ServiceProvider
             case 'FR':
                 $locale = 'fr';
                 break;
-                // Fügen Sie weitere Sprachen für andere Länder hinzu.
             default:
                 $locale = 'de';
         }

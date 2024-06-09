@@ -13,8 +13,8 @@
                 <div class="card-body">
                     <p><b>{{ __('home.user.name') }}</b>{{ucwords($user->name)}}</p>
                     <p><b>{{ __('home.user.mail') }}</b>{{$user->email}}</p>
-                    <a href="{{URL::previous()}}" class="btn btn-primary my-2 float-end">
-                        {{ __('home.back') }}
+                    <a href="{{route('index')}}" class="btn btn-success my-2 float-end">
+                        {{ __('home.home') }}
                     </a>
                 </div>
             </div>
