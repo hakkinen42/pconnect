@@ -22,7 +22,6 @@ Dieses Projekt ist eine Anwendung, die mit Docker Compose betrieben wird.
 <ol start="1">
 <li>Klonen Sie das Projekt: <br>
 <code>git clone https://github.com/benutzername/projektname.git</code><br>
-<code>cd projektname</code>
 </li>
 
 <li>Bearbeiten Sie die Datei <b>/etc/hosts</b> und fügen Sie das Projekt hinzu: <br>
@@ -32,7 +31,8 @@ Fügen Sie folgende Zeile hinzu:<br>
 </li>
 
 <li>Bauen Sie die Docker-Images und starten Sie die Container: <br>
-<code>docker-compose up --build</code>
+<code>cd docker</code>
+<code>docker-compose up</code>
 </li>
 
 <li>Öffnen Sie Ihren Browser und gehen Sie zu <a href="http://pconnectsolutions.com">http://pconnectsolutions.com</a>, um die Anwendung anzuzeigen.</li>
@@ -62,8 +62,10 @@ GOOGLE_SECRET_KEY=google_secret_key
 </li>
 </li>
 <li>Erstellen Sie die Datenbank und führen Sie Migrationsbefehle aus: <br>
-<code>docker-compose exec app bash</code><br>
+<code>docker ps</code><br>
+<code>docker exec -it php8.2_container_id bash</code><br>
 Dann im Container:<br>
+<code>cd pconnect_solutions</code>
 <code>php artisan migrate</code>
 <li>Generieren Sie den Anwendungsschlüssel: <br>
 <code>php artisan key:generate</code>
