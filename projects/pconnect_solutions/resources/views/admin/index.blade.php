@@ -11,8 +11,8 @@
             <div class="card">
                 <div class="card-header">{{ __('home.user.detail') }}</div>
                 <div class="card-body">
-                    <p><b>{{ __('home.user.name') }}</b>{{ucwords($user->name)}}</p>
-                    <p><b>{{ __('home.user.mail') }}</b>{{$user->email}}</p>
+                    <p>{{ __('home.user.name',['name' => $user ? ucwords($user->name) :'']) }}</p>
+                    <p>{{ __('home.user.mail',['mail' => $user ? $user->email :'']) }}</p>
                     <a href="{{route('index')}}" class="btn btn-success my-2 float-end">
                         {{ __('home.home') }}
                     </a>

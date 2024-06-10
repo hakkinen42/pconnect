@@ -6,8 +6,18 @@
 @section('body')
     <div class="container col-md-10 px-4 py-5">
         <div class="mb-4 d-flex justify-content-between">
-            <a href="/" class="mb-2">Pconnect <span>Solutions</span></a>
-            <h5 class="d-inline-block text-muted fw-normal mb-4 ">{{__('messages.verify.welcome')}}</h5>
+            <div class="col-md-6 mb-2">
+                <a href="{{ route('index')}}"class="brand" >
+                    <span>[p]</span>
+                    <div>
+                        <span>connect</span> 
+                        <span>Intelligente IT-Lösungen</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 align-content-center text-center">
+                <h5 class="d-inline-block text-muted fw-normal">{{__('messages.verify.welcome')}}</h5>
+            </div>
         </div>
 
         <form class="forms-sample" id="verifyMailForm" action="{{ route('send-verify-mail') }}" method="POST">

@@ -3,8 +3,8 @@
 return [
     'user' => [
         'detail' => 'User - Detailansicht',
-        'name' => 'Name Surname : ',
-        'mail' => 'Email Adresse : ',
+        'name' => 'Name Nachname: :name',
+        'mail' => 'E-Mail-Adresse: :mail',
     ],
     'home' => 'StartSeite'
 
