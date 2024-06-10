@@ -166,8 +166,8 @@ Dieses Projekt ist eine Webanwendung, die mit Laravel entwickelt wurde. Um das P
 <ol start="1">
 <li>Klonen Sie das Projekt: <br>
 <code>git clone https://github.com/hakkinen42/pconnect.git</code><br>
-<code>cd projektname</code>
-</li>
+<code>cd pconnect</code>
+</li>gir
 <li>Installieren Sie Laravel und die Abhängigkeiten: <br>
 <code>cd pconnect_solutions</code><br>
 <code>composer install</code>
@@ -177,11 +177,12 @@ Dieses Projekt ist eine Webanwendung, die mit Laravel entwickelt wurde. Um das P
 Konfigurieren Sie die <b>.env</b> Datei entsprechend Ihren Bedürfnissen. Ein Beispiel für eine Konfiguration ist unten angegeben:
 <pre><code>
 
-DB_HOST=mysql8.1
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=dbname
+DB_DATABASE=laravel
 DB_USERNAME=root
-DB_PASSWORD=root
+DB_PASSWORD=
 
 MAIL_MAILER=smtp
 MAIL_HOST=sandbox.smtp.mailtrap.io
