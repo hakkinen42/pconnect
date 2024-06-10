@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+    
+/* Brand*/
+.brand{ 
+    text-decoration: none;
+    display: flex;
+}
+
+.brand>span:first-child {
+    font-weight: bold;
+    color:#64B32E;
+    font-size: 3em; 
+}
+
+.brand > div {
+    position: relative;
+    margin-left: 5px; 
+}
+
+.brand > div > span:first-child  {
+    font-weight: normal;
+    color: rgb(18, 45, 169);
+    font-size: 2.2em;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+
+.brand > div > span:nth-child(2) {
+    font-weight: lighter;
+    width: 128px;
+    color: #7f8c8d; 
+    font-size: 0.56em; 
+    text-transform: uppercase;
+    position: absolute;
+    padding: 0;
+    top: 50px;
+    left: 2px;
+}
+
