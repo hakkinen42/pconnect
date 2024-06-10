@@ -16,6 +16,64 @@ Dieses Projekt ist eine Anwendung, die mit Docker Compose betrieben wird.
 - Google-Anmeldung ist aktiviert.
 - Das Design wurde aufgrund des Laravel 10 Projekts in den Hintergrund gerückt.
 
+### Einstellungen
+
+- Google Einstellungen
+
+<ol start="1">
+<li>
+<strong>Melden Sie sich bei der Google Cloud Platform an:</strong> Öffnen Sie Ihren Browser und gehen Sie zur <a href="https://console.cloud.google.com/">Google Cloud Platform</a>-Startseite.
+</li>
+<li>
+<strong>Melden Sie sich bei Ihrem Konto an:</strong> Wenn Sie bereits ein Google-Konto haben, melden Sie sich mit Ihrem Benutzernamen und Ihrem Passwort an. Andernfalls erstellen Sie ein neues Konto.
+</li>
+<li>
+<strong>Erstellen Sie ein neues Projekt:</strong> Nachdem Sie sich bei der Google Cloud Platform-Konsole angemeldet haben, klicken Sie oben rechts auf das Menü "Projektauswahl" und wählen Sie die Option "Neues Projekt".
+</li>
+<li>
+<strong>Geben Sie den Projektnamen und die ID an:</strong> Geben Sie einen Projektnamen und optional eine Projekt-ID ein, um ein neues Projekt zu erstellen.
+</li>
+<li>
+<strong>Projekt erstellen:</strong> Nachdem Sie die Informationen eingegeben haben, klicken Sie auf die Schaltfläche "Erstellen", um das neue Projekt zu erstellen.
+</li>
+<li>
+<strong>Wechseln Sie zur Seite "APIs & Services":</strong> Klicken Sie im linken oberen Menü auf das Menüsymbol und wählen Sie "APIs & Services" > "Credentials", um zur Seite "Credentials" zu gelangen.
+</li>
+<li>
+<strong>Wechseln Sie zum Tab "OAuth-Client-ID":</strong> Nachdem Sie auf "Create credentials" geklickt haben, wählen Sie die Option "OAuth-Client-ID".
+</li>
+<li>
+<strong>App-Typ als Webanwendung einstellen:</strong> Bei der Erstellung der OAuth-Client-ID wählen Sie den App-Typ als "Web Aplication".
+</li>
+<li>
+<strong>Fügen Sie autorisierte JavaScript-Ursprünge hinzu:</strong> Fügen Sie dem Abschnitt "Autorisiert
+JavaScript-Ursprünge" die URL http://pconnectsolutions.com/ hinzu.
+</li>
+<li>
+<strong>Fügen Sie autorisierte Weiterleitungs-URIs hinzu:</strong> Fügen Sie dem Abschnitt "Autorisiert
+Weiterleitungs-URIs" die URI `http://pconnectsolutions.com/auth/google/callback` hinzu und speichern Sie di
+Einstellungen.
+</li>
+<li>
+<strong>Holen Sie sich Ihren API-Schlüssel:</strong> Nachdem Sie Ihren API-Schlüssel erstellt haben, wird Ihnen ein Schlüssel zur Verfügung gestellt. Diesen Schlüssel können Sie in Ihrem Projekt verwenden.
+</li>
+</ol>
+
+- Mailtrap Einstellungen
+
+<ol start="1">
+<li>
+<strong>Gehe zur Mailtrap-Website:</strong> Öffnen Sie Ihren Browser und gehen Sie zur <a href="https://mailtrap.io/">Mailtrap</a> Mailtrap-Website.
+</li>
+<li>
+<strong>E-Mail-Testing Bereich: Projekt erstellen:</strong> Mailtrap-Oberfläche, es sollte einen Bereich namens "E-Mail-Testing" geben. Erstellen Sie von diesem Bereich aus ein neues Projekt.
+</li>
+<li>
+<strong>Code Samples: Konfigurationsdaten für PHP 9+ in Ihre .env-Datei einfügen:</strong> In Mailtraps "Code-Beispiele" Abschnitt finden Sie Konfigurationsdaten für PHP und Laravel. Kopieren Sie diese Daten und fügen Sie sie in Ihre .env-Datei ein. 
+</li>
+</ol>
+Durch die Umsetzung dieser Schritte können Sie den E-Mail-Versand testen und die Konfiguration für Laravel einrichten.
+
 ### Installation
 
 - <u><b>Installationsschritte mit Docker</b></u>
@@ -59,59 +117,6 @@ MAIL_FROM_NAME="${APP_NAME}"
 GOOGLE_CLIENT_ID=google_client_id
 GOOGLE_SECRET_KEY=google_secret_key
 </code></pre>
-
-Google Einstellungen
-<ul>
-<li>
-<strong>Melden Sie sich bei der Google Cloud Platform an:</strong> Öffnen Sie Ihren Browser und gehen Sie zur <a href="https://console.cloud.google.com/">Google Cloud Platform</a>-Startseite.
-</li>
-<li>
-<strong>Melden Sie sich bei Ihrem Konto an:</strong> Wenn Sie bereits ein Google-Konto haben, melden Sie sich mit Ihrem Benutzernamen und Ihrem Passwort an. Andernfalls erstellen Sie ein neues Konto.
-</li>
-<li>
-<strong>Erstellen Sie ein neues Projekt:</strong> Nachdem Sie sich bei der Google Cloud Platform-Konsole angemeldet haben, klicken Sie oben rechts auf das Menü "Projektauswahl" und wählen Sie die Option "Neues Projekt".
-</li>
-<li>
-<strong>Geben Sie den Projektnamen und die ID an:</strong> Geben Sie einen Projektnamen und optional eine Projekt-ID ein, um ein neues Projekt zu erstellen.
-</li>
-<li>
-<strong>Projekt erstellen:</strong> Nachdem Sie die Informationen eingegeben haben, klicken Sie auf die Schaltfläche "Erstellen", um das neue Projekt zu erstellen.
-</li>
-<li>
-<strong>Wechseln Sie zur Seite "APIs & Services":</strong> Klicken Sie im linken oberen Menü auf das Menüsymbol und wählen Sie "APIs & Services" > "Credentials", um zur Seite "Credentials" zu gelangen.
-</li>
-<li>
-<strong>Wechseln Sie zum Tab "OAuth-Client-ID":</strong> Nachdem Sie auf "Create credentials" geklickt haben, wählen Sie die Option "OAuth-Client-ID".
-</li>
-<li>
-<strong>App-Typ als Webanwendung einstellen:</strong> Bei der Erstellung der OAuth-Client-ID wählen Sie den App-Typ als "Web Aplication".
-</li>
-<li>
-<strong>Fügen Sie autorisierte JavaScript-Ursprünge hinzu:</strong> Fügen Sie dem Abschnitt "Autorisiert
-JavaScript-Ursprünge" die URL http://pconnectsolutions.com/ hinzu.
-</li>
-<li>
-<strong>Fügen Sie autorisierte Weiterleitungs-URIs hinzu:</strong> Fügen Sie dem Abschnitt "Autorisiert
-Weiterleitungs-URIs" die URI `http://pconnectsolutions.com/auth/google/callback` hinzu und speichern Sie di
-Einstellungen.
-</li>
-<li>
-<strong>Holen Sie sich Ihren API-Schlüssel:</strong> Nachdem Sie Ihren API-Schlüssel erstellt haben, wird Ihnen ein Schlüssel zur Verfügung gestellt. Diesen Schlüssel können Sie in Ihrem Projekt verwenden.
-</li>
-</ul>
-Mailtrap Einstellungen
-<ul>
-<li>
-<strong>Gehe zur Mailtrap-Website:</strong> Öffnen Sie Ihren Browser und gehen Sie zur <a href="https://mailtrap.io/">Mailtrap</a> Mailtrap-Website.
-</li>
-<li>
-<strong>E-Mail-Testing Bereich: Projekt erstellen:</strong> Mailtrap-Oberfläche, es sollte einen Bereich namens "E-Mail-Testing" geben. Erstellen Sie von diesem Bereich aus ein neues Projekt.
-</li>
-<li>
-<strong>Code Samples: Konfigurationsdaten für PHP 9+ in Ihre .env-Datei einfügen:</strong> In Mailtraps "Code-Beispiele" Abschnitt finden Sie Konfigurationsdaten für PHP und Laravel. Kopieren Sie diese Daten und fügen Sie sie in Ihre .env-Datei ein. 
-</li>
-</ul>
-Durch die Umsetzung dieser Schritte können Sie den E-Mail-Versand testen und die Konfiguration für Laravel einrichten.
 </li>
 <li>Erstellen Sie die Datenbank und führen Sie Migrationsbefehle aus: <br>
 <ol>
@@ -160,7 +165,7 @@ Dieses Projekt ist eine Webanwendung, die mit Laravel entwickelt wurde. Um das P
 
 <ol start="1">
 <li>Klonen Sie das Projekt: <br>
-<code>git clone https://github.com/benutzername/projektname.git</code><br>
+<code>git clone https://github.com/hakkinen42/pconnect.git</code><br>
 <code>cd projektname</code>
 </li>
 <li>Installieren Sie Laravel und die Abhängigkeiten: <br>
