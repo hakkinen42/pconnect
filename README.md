@@ -167,7 +167,7 @@ Dieses Projekt ist eine Webanwendung, die mit Laravel entwickelt wurde. Um das P
 <li>Klonen Sie das Projekt: <br>
 <code>git clone https://github.com/hakkinen42/pconnect.git</code><br>
 <code>cd pconnect</code>
-</li>gir
+</li>
 <li>Installieren Sie Laravel und die Abhängigkeiten: <br>
 <code>cd pconnect_solutions</code><br>
 <code>composer install</code>
