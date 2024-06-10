@@ -5,9 +5,19 @@
 
 @section('body')
     <div class="container px-4 py-5 mb-4">
-        <div class="mb-4 d-flex justify-content-between">
-            <a href="{{ route('index')}}"class="mb-2 brand"><span>[p]</span>connect Solutions GmbH</a>
-            <h5 class="d-inline-block text-muted fw-normal mb-4 ">{{__('messages.account.create')}}</h5>
+        <div class="mb-4 row">
+            <div class="col-md-6 mb-2">
+                <a href="{{ route('index')}}"class="brand" >
+                    <span>[p]</span>
+                    <div>
+                        <span>connect</span> 
+                        <span>Intelligente IT-Lösungen</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 align-content-center text-center">
+                <h5 class="d-inline-block text-muted fw-normal">{{__('messages.account.create')}}</h5>
+            </div>
         </div>
         
         <form class="forms-sample" action="{{ route('register') }}" method="POST" id="registerForm">

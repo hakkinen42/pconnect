@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'welcome' => 'Bienvenue sur notre page :username.',
+    'welcome' => 'Bienvenue sur notre page :username',
     'title' => [
         'homepage' => 'Page d\'accueil',
         'login' => 'Connexion',

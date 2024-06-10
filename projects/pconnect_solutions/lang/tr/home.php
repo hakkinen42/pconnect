@@ -3,8 +3,8 @@
 return [
     'user' => [
         'detail' => 'Kullanıcı - Detay Görünümü',
-        'name' => 'Ad Soyad: ',
-        'mail' => 'E-posta Adresi: ',
+        'name' => 'Ad Soyad: :name',
+        'mail' => 'E-posta Adresi: :mail',
     ],
     'home' => 'Anasayfa'
 ];
