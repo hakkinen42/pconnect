@@ -3,8 +3,8 @@
 return [
     'user' => [
         'detail' => 'Détail de l\'utilisateur',
-        'name' => 'Nom Prénom : ',
-        'mail' => 'Adresse e-mail : ',
+        'name' => 'Nom Prénom : :name',
+        'mail' => 'Adresse e-mail : :mail',
     ],
     'home' => 'Page d\'accueil'
 ];

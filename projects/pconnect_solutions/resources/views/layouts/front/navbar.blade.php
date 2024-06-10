@@ -1,10 +1,18 @@
 <nav class="navbar navbar-expand-md bg-dark py-1 ">
-    <div class="container-fluid bg-warning py-1">
+    <div class="container-fluid bg-warning">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <a class="navbar-brand" href="{{ route('index')}}"><span>[p]</span>connect Solutions GmbH</a>
+        <div class="col-md-6 d-none d-md-block">
+
+            <a href="{{ route('index')}}"class="brand" >
+                <span>[p]</span>
+                <div>
+                    <span>connect</span> 
+                    <span>Intelligente IT-Lösungen</span>
+                </div>
+            </a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                 @guest
